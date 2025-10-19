@@ -3,111 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trần Thanh Sơn - Portfolio Kỹ Sư Phần Mềm</title>
-    <!-- Tải Tailwind CSS để tạo kiểu nhanh -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    
-    <!-- LIÊN KẾT ĐẾN TỆP CSS RIÊNG BIỆT -->
-    <link rel="stylesheet" href="style.css"> 
+    <title>Giới Thiệu Bản Thân</title>
+    <!-- ===== LIÊN KẾT CSS ===== -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-900 text-gray-100 antialiased">
-
-    <!-- Thanh Điều Hướng Bên Trái (Sidebar) -->
-    <aside class="fixed top-0 left-0 w-16 h-full bg-gray-800 flex flex-col items-center py-6 z-10 shadow-lg">
-        <!-- Logo (Icon) -->
-        <div class="mb-8 p-2 text-indigo-500 text-2xl font-bold cursor-pointer">TS</div>
-        
-        <!-- Các Icon Điều Hướng -->
-        <nav class="space-y-4">
-            <a href="#trang-chu" class="sidebar-icon p-3 rounded-xl block text-gray-400 hover:text-indigo-500 transition duration-150">
-                <!-- Home Icon -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-            </a>
-            <a href="#ky-nang" class="sidebar-icon p-3 rounded-xl block text-gray-400 hover:text-indigo-500 transition duration-150">
-                <!-- Skills Icon (Code) -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-            </a>
-            <a href="#du-an" class="sidebar-icon p-3 rounded-xl block text-gray-400 hover:text-indigo-500 transition duration-150">
-                <!-- Projects Icon (Folder) -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
-            </a>
-            <a href="#lien-he" class="sidebar-icon p-3 rounded-xl block text-gray-400 hover:text-indigo-500 transition duration-150">
-                <!-- Contact Icon (Envelope) -->
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 13h9a2 2 0 002-2V7a2 2 0 00-2-2H3a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-            </a>
-        </nav>
-    </aside>
-
-    <!-- Khu Vực Nội Dung Chính -->
-    <main class="ml-16 p-4 sm:p-8 lg:p-12">
-        
-        <!-- Tiêu Đề và Ảnh Đại Diện -->
-        <section id="trang-chu" class="mb-12">
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-50 mb-6 border-b-2 border-indigo-500 pb-2">
-                Trang Chủ / Giới Thiệu
-            </h1>
-
-            <!-- Thẻ Profile Chính (Mô phỏng thẻ lớn trong ảnh mẫu) -->
-            <div id="profile-card" class="content-card bg-gray-800 p-6 sm:p-10 rounded-2xl flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-10 shadow-2xl">
+<body>
+    <div class="container">
+        <!-- ===== HEADER - SỬA TÊN VÀ TIÊU ĐỀ TẠI ĐÂY ===== -->
+        <header>
+            <div class="header-content">
+                <!-- AVATAR - SỬA ĐƯỜNG DẪN ẢNH TẠI ĐÂY -->
+                <img src="https://via.placeholder.com/150?text=Avatar" alt="Avatar" class="avatar">
                 
-                <!-- Ảnh Đại Diện -->
-                <div class="flex-shrink-0 w-32 h-32 sm:w-40 sm:h-40">
-                    <img id="profile-picture" 
-                         src="./images/profile.jpg" <!-- Đường dẫn tương đối trỏ tới thư mục images -->
-                         alt="Ảnh đại diện của Trần Thanh Sơn" 
-                         class="rounded-full w-full h-full object-cover border-4 border-indigo-500 shadow-xl"
-                         onerror="this.onerror=null; this.src='https://placehold.co/160x160/312e81/ffffff?text=TS';">
-                </div>
+                <!-- TÊN CỦA BẠN -->
+                <h1>👋 Xin Chào, Tôi Là Nguyễn Văn A</h1>
+                
+                <!-- TIÊU ĐỀ CÔNG VIỆC -->
+                <p>Lập Trình Viên Full Stack | Nhà Thiết Kế Web</p>
+            </div>
+        </header>
 
-                <!-- Thông Tin Chi Tiết -->
-                <div class="text-center md:text-left">
-                    <p class="text-sm font-medium text-indigo-400 mb-1">Kỹ sư Phần mềm - Sáng tạo & Đam mê</p>
-                    <h2 id="name" class="text-4xl sm:text-5xl font-bold text-white mb-2">Trần Thanh Sơn</h2>
-                    <p id="bio" class="text-gray-400 leading-relaxed max-w-2xl">
-                        Chào mừng đến với không gian cá nhân của tôi! Tôi là một nhà phát triển Full-Stack chuyên về JavaScript. Tôi tin vào việc xây dựng các sản phẩm số chất lượng cao, có khả năng mở rộng và mang lại trải nghiệm người dùng tuyệt vời. Hãy khám phá các dự án của tôi bên dưới!
-                    </p>
-                    <div class="mt-4 flex justify-center md:justify-start space-x-4">
-                        <a id="github-link" href="#" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition duration-150">GitHub</a>
-                        <a id="linkedin-link" href="#" target="_blank" class="text-indigo-400 hover:text-indigo-300 transition duration-150">LinkedIn</a>
-                        <a id="email-link" href="#" class="text-indigo-400 hover:text-indigo-300 transition duration-150">Email</a>
+        <div class="content">
+            <!-- ===== PHẦN VỀ TÔI ===== -->
+            <div class="section">
+                <h2>📝 Về Tôi</h2>
+                <!-- SỬA NỘI DUNG VỀ BẠN TẠI ĐÂY -->
+                <p class="about-text">
+                    Tôi là một lập trình viên đam mê với kinh nghiệm 5 năm trong phát triển web. 
+                    Tôi yêu thích tạo ra những ứng dụng web hiện đại, responsive và user-friendly. 
+                    Luôn sẵn sàng học hỏi những công nghệ mới và giải quyết những thách thức phức tạp.
+                </p>
+                
+                <!-- ===== KỸ NĂNG - THÊM/XÓA KỸ NĂNG TẠI ĐÂY ===== -->
+                <div>
+                    <h3 style="color: #667eea; margin-bottom: 10px;">🛠️ Kỹ Năng</h3>
+                    <div class="skills">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">UI/UX</span>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Phần Kỹ Năng Nổi Bật -->
-        <section id="ky-nang" class="mb-12">
-            <h2 class="text-2xl sm:text-3xl font-bold text-gray-50 mb-6 border-b border-gray-700 pb-2">
-                Kỹ Năng Nổi Bật
-            </h2>
-            <div id="skills-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Skills Cards sẽ được điền bằng JavaScript -->
+            <!-- ===== PHẦN LIÊN HỆ ===== -->
+            <div class="section">
+                <h2>📞 Liên Hệ</h2>
+                <div class="contact-info">
+                    <!-- EMAIL - SỬA EMAIL TẠI ĐÂY -->
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div class="contact-text">
+                            <strong>Email:</strong><br>
+                            nguyenvana@example.com
+                        </div>
+                    </div>
+                    
+                    <!-- ĐIỆN THOẠI - SỬA SỐ ĐIỆN THOẠI TẠI ĐÂY -->
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div class="contact-text">
+                            <strong>Điện Thoại:</strong><br>
+                            +84 123 456 789
+                        </div>
+                    </div>
+                    
+                    <!-- ĐỊA CHỈ - SỬA ĐỊA CHỈ TẠI ĐÂY -->
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div class="contact-text">
+                            <strong>Địa Chỉ:</strong><br>
+                            Hà Nội, Việt Nam
+                        </div>
+                    </div>
+                    
+                    <!-- MẠNG XÃ HỘI - SỬA LINK TẠI ĐÂY -->
+                    <div class="contact-item">
+                        <span class="contact-icon">🔗</span>
+                        <div class="contact-text">
+                            <strong>Mạng Xã Hội:</strong><br>
+                            <a href="https://linkedin.com" target="_blank" style="color: #667eea; text-decoration: none;">LinkedIn</a> | 
+                            <a href="https://github.com" target="_blank" style="color: #667eea; text-decoration: none;">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WIDGET THỜI TIẾT -->
+                <div class="weather-widget">
+                    <h3>🌤️ Thời Tiết Hiện Tại</h3>
+                    <div class="weather-info" id="weather">
+                        Đang tải thông tin thời tiết...
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <!-- Phần Dự Án Gần Đây -->
-        <section id="du-an" class="mb-12">
-            <h2 class="text-2xl sm:text-3xl font-bold text-gray-50 mb-6 border-b border-gray-700 pb-2">
-                Dự Án Gần Đây
-            </h2>
-            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                 <!-- Project Cards sẽ được điền bằng JavaScript -->
+            <!-- ===== PHẦN BẢN ĐỒ ===== -->
+            <div class="map-container">
+                <h2>🗺️ Vị Trí Của Tôi</h2>
+                <div id="map"></div>
             </div>
-        </section>
-        
-        <!-- Phần Liên Hệ -->
-        <section id="lien-he" class="mb-12 text-center p-8 bg-gray-800 rounded-2xl shadow-xl">
-            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Bạn có dự án cần trao đổi?</h2>
-            <p class="text-gray-400 mb-6">Đừng ngần ngại gửi email cho tôi hoặc kết nối qua LinkedIn.</p>
-            <a id="contact-button" href="mailto:son.thanh.dev@email.com" class="inline-block px-8 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500 transition duration-300 shadow-md">
-                Gửi Email Cho Sơn
-            </a>
-        </section>
+        </div>
 
-    </main>
+        <!-- FOOTER - SỬA NĂM VÀ TÊN TẠI ĐÂY -->
+        <footer>
+            <p>&copy; 2025 Nguyễn Văn A. Tất cả quyền được bảo lưu.</p>
+        </footer>
+    </div>
 
-    <!-- LIÊN KẾT ĐẾN TỆP JAVASCRIPT RIÊNG BIỆT -->
+    <!-- ===== LIÊN KẾT JAVASCRIPT ===== -->
     <script src="script.js"></script>
+    
+    <!-- GOOGLE MAPS API - THAY YOUR_API_KEY BẰNG API KEY CỦA BẠN -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </body>
 </html>
