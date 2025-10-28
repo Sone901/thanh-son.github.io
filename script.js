@@ -35,7 +35,7 @@ async function getWeather() {
   }
 }
 
-/* ===== MOUSE TRACKING FOR SOCIAL CARDS ===== */
+
 const cards = document.querySelectorAll(".card")
 
 cards.forEach((card) => {
@@ -49,7 +49,7 @@ cards.forEach((card) => {
   })
 })
 
-/* ===== CALL FUNCTIONS WHEN PAGE LOADS ===== */
+
 window.addEventListener("load", () => {
   getWeather()
 })
