@@ -1,42 +1,37 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới Thiệu Bản Thân</title>
-    <!-- ===== LIÊN KẾT CSS ===== -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portfolio - Tran Thanh Son</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <!-- ===== HEADER - SỬA TÊN VÀ TIÊU ĐỀ TẠI ĐÂY ===== -->
+        <!-- HEADER -->
         <header>
             <div class="header-content">
-                <!-- AVATAR - SỬA ĐƯỜNG DẪN ẢNH TẠI ĐÂY -->
                 <img src="https://via.placeholder.com/150?text=Avatar" alt="Avatar" class="avatar">
-                
-                <!-- TÊN CỦA BẠN -->
-                <h1>👋 Xin Chào, Tôi Là Nguyễn Văn A</h1>
-                
-                <!-- TIÊU ĐỀ CÔNG VIỆC -->
-                <p>Lập Trình Viên Full Stack | Nhà Thiết Kế Web</p>
+                <h1>👋 Hello, I'm Tran Thanh Son</h1>
+                <p class="job-title">Full Stack Developer | Web Designer</p>
+                <p class="intro-text">4th Year Student - Information Technology University | Passionate about web development and UI/UX design</p>
             </div>
         </header>
 
         <div class="content">
-            <!-- ===== PHẦN VỀ TÔI ===== -->
+            <!-- ABOUT ME SECTION -->
             <div class="section">
-                <h2>📝 Về Tôi</h2>
-                <!-- SỬA NỘI DUNG VỀ BẠN TẠI ĐÂY -->
+                <h2>📝 About Me</h2>
                 <p class="about-text">
-                    Tôi là một lập trình viên đam mê với kinh nghiệm 5 năm trong phát triển web. 
-                    Tôi yêu thích tạo ra những ứng dụng web hiện đại, responsive và user-friendly. 
-                    Luôn sẵn sàng học hỏi những công nghệ mới và giải quyết những thách thức phức tạp.
+                    I'm a passionate young developer with a love for web technologies. Currently a 4th year student at Information Technology University. 
+                    I enjoy creating modern, responsive, and user-friendly web applications. 
+                    Always ready to learn new technologies and tackle complex challenges.
                 </p>
                 
-                <!-- ===== KỸ NĂNG - THÊM/XÓA KỸ NĂNG TẠI ĐÂY ===== -->
+                <!-- SKILLS -->
                 <div>
-                    <h3 style="color: #667eea; margin-bottom: 10px;">🛠️ Kỹ Năng</h3>
+                    <h3 style="color: #667eea; margin-bottom: 10px;">🛠️ Skills</h3>
                     <div class="skills">
                         <span class="skill-tag">HTML/CSS</span>
                         <span class="skill-tag">JavaScript</span>
@@ -50,74 +45,95 @@
                 </div>
             </div>
 
-            <!-- ===== PHẦN LIÊN HỆ ===== -->
+            <!-- CONTACT SECTION -->
             <div class="section">
-                <h2>📞 Liên Hệ</h2>
+                <h2>📞 Contact</h2>
                 <div class="contact-info">
-                    <!-- EMAIL - SỬA EMAIL TẠI ĐÂY -->
                     <div class="contact-item">
                         <span class="contact-icon">📧</span>
                         <div class="contact-text">
                             <strong>Email:</strong><br>
-                            nguyenvana@example.com
+                            <a href="mailto:tranthanhson@example.com">tranthanhson@example.com</a>
                         </div>
                     </div>
                     
-                    <!-- ĐIỆN THOẠI - SỬA SỐ ĐIỆN THOẠI TẠI ĐÂY -->
                     <div class="contact-item">
                         <span class="contact-icon">📱</span>
                         <div class="contact-text">
-                            <strong>Điện Thoại:</strong><br>
-                            +84 123 456 789
+                            <strong>Phone:</strong><br>
+                            <a href="tel:+84123456789">+84 123 456 789</a>
                         </div>
                     </div>
                     
-                    <!-- ĐỊA CHỈ - SỬA ĐỊA CHỈ TẠI ĐÂY -->
                     <div class="contact-item">
                         <span class="contact-icon">📍</span>
                         <div class="contact-text">
-                            <strong>Địa Chỉ:</strong><br>
-                            Hà Nội, Việt Nam
-                        </div>
-                    </div>
-                    
-                    <!-- MẠNG XÃ HỘI - SỬA LINK TẠI ĐÂY -->
-                    <div class="contact-item">
-                        <span class="contact-icon">🔗</span>
-                        <div class="contact-text">
-                            <strong>Mạng Xã Hội:</strong><br>
-                            <a href="https://linkedin.com" target="_blank" style="color: #667eea; text-decoration: none;">LinkedIn</a> | 
-                            <a href="https://github.com" target="_blank" style="color: #667eea; text-decoration: none;">GitHub</a>
+                            <strong>Location:</strong><br>
+                            Ho Chi Minh City, Vietnam
                         </div>
                     </div>
                 </div>
 
-                <!-- WIDGET THỜI TIẾT -->
+                <!-- WEATHER WIDGET -->
                 <div class="weather-widget">
-                    <h3>🌤️ Thời Tiết Hiện Tại</h3>
+                    <h3>🌤️ Current Weather</h3>
                     <div class="weather-info" id="weather">
-                        Đang tải thông tin thời tiết...
+                        <i class="fas fa-spinner fa-spin"></i> Loading...
                     </div>
                 </div>
             </div>
 
-            <!-- ===== PHẦN BẢN ĐỒ ===== -->
-            <div class="map-container">
-                <h2>🗺️ Vị Trí Của Tôi</h2>
-                <div id="map"></div>
+            <!-- SOCIAL MEDIA SECTION WITH MOUSE TRACKING -->
+            <div class="section full-width">
+                <h2>🔗 Connect With Me</h2>
+                <div id="cards">
+                    <!-- FACEBOOK -->
+                    <div class="card">
+                        <div class="card_content">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <h2>Facebook</h2>
+                            <a href="https://facebook.com" target="_blank">
+                                <i class="fa-solid fa-link"></i>
+                                <span>Follow me</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GITHUB -->
+                    <div class="card">
+                        <div class="card_content">
+                            <i class="fa-brands fa-github"></i>
+                            <h2>GitHub</h2>
+                            <p class="followers">Followers: 150</p>
+                            <a href="https://github.com" target="_blank">
+                                <i class="fa-solid fa-link"></i>
+                                <span>Follow me</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- LINKEDIN -->
+                    <div class="card">
+                        <div class="card_content">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <h2>LinkedIn</h2>
+                            <p class="followers">Connection: 100k</p>
+                            <a href="https://linkedin.com" target="_blank">
+                                <i class="fa-solid fa-link"></i>
+                                <span>Connect</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- FOOTER - SỬA NĂM VÀ TÊN TẠI ĐÂY -->
+        <!-- FOOTER -->
         <footer>
-            <p>&copy; 2025 Nguyễn Văn A. Tất cả quyền được bảo lưu.</p>
+            <p>&copy; 2025 Tran Thanh Son. All rights reserved. | Designed by myself ❤️</p>
         </footer>
     </div>
 
-    <!-- ===== LIÊN KẾT JAVASCRIPT ===== -->
     <script src="script.js"></script>
-    
-    <!-- GOOGLE MAPS API - THAY YOUR_API_KEY BẰNG API KEY CỦA BẠN -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </body>
 </html>
